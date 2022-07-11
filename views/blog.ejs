@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('./partials/header.ejs') %>
+<body>
+    <%- include('./partials/navbar.ejs') %>
+    <div class="selected-blog">
+        <div class="blog-header">
+            <h1>
+                <%= blog.title %>
+                <p>Created : <%= blog.createdAt.getHours() %>:<%= blog.createdAt.getMinutes() %>:<%= blog.createdAt.getSeconds() %>|<%= blog.createdAt.getDate() %>/<%= blog.createdAt.getMonth() + 1 %>/<%= blog.createdAt.getFullYear() %></p>
+                <p>Updated : <%= blog.updatedAt.getHours() %>:<%= blog.updatedAt.getMinutes() %>:<%= blog.updatedAt.getSeconds() %>|<%= blog.updatedAt.getDate() %>/<%= blog.updatedAt.getMonth() + 1 %>/<%= blog.updatedAt.getFullYear() %></p>
+            </h1>
+            <div class="buttons">
+                <button class="delete"><a href="/update/<%= blog._id %>"><img src="/images/update.png"><span>Edit</span></a></button>
+                <button class="delete"><a href="/delete/<%= blog._id %>"><img src="/images/delete.png"><span>Delete</span></a></button>
+            </div>
+        </div>
+        <p><%= blog.content %></p>
+    </div>
+</body>
+</html>

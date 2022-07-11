@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Shadow&display=swap');
+
+body{
+    margin-top:70px;
+    background-color: #F54768;
+}
+nav{
+    display:flex;
+    position:fixed;
+    top:0;
+    right:0;
+    left: 0;
+    align-items:center;
+    justify-content: space-between;
+    background-color: #41436A;
+    height: 4em;
+}
+nav > div >a{
+    text-decoration: none;
+    font-size: 18px;
+    margin-right: 10px;
+    color: #fb9a7d;
+    font-family: 'Secular One', sans-serif;
+}
+nav > div >a:hover{
+    color: rgb(255, 255, 255);
+}
+.nav-header {
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+}
+nav > .nav-header > h1 > a{
+    text-decoration: none;
+    margin-left: 20px;
+    color: #FF9677;
+    font-family: 'Londrina', cursive;
+    font-size: 35px;
+    margin-top: 5px;
+}
+nav > .nav-header > h1 >a:hover{
+    color: rgb(255, 255, 255);
+}
+nav > .nav-header > img{
+    height: 40px;
+}
+.all-blogs{
+    display:grid;
+    justify-content:center;
+    background-color: #F54768;
+    overflow: scroll;
+    height: 130%;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+.blog{
+    background-color: white;
+    display:flex;
+    flex-direction: column;
+    width: 70%;
+    height: 90%;
+    border-radius: 15px;
+    margin-bottom:25px;
+    margin-left: 15%;
+    border-bottom: solid 5px;
+    border-right: solid 5px;
+    border-color: #fb9a7d;
+    box-shadow: #fb9a7d;
+}
+.blog > .blog-header{
+    display:flex;
+    align-items: center;
+    justify-content:space-between;
+    border-bottom: solid 2px;
+    border-color: #974063;
+}
+.blog > .blog-header > h1{
+    margin-left: 20px;
+    font-family: 'Secular One', sans-serif;
+    color: #974063;
+}
+.blog > .blog-header > p{
+    margin-right: 20px;
+    font-family: 'Secular One', sans-serif;
+    color: #974063;
+}
+.blog > p{
+    margin-left: 20px;
+    margin-right: 10px;
+    font-size: 18px;
+    font-family: 'Secular One', sans-serif;
+    color: #974063;
+}
+.blog > a{
+    text-decoration: none;
+}
+.Header{
+    color: #ffff;
+    height: 100%;
+    width:70%;
+    margin-left: 16%;
+    font-family: 'Londrina', cursive;
+    font-size: 40px;
+    margin-top: 10px;
+}
+.content{
+    display: grid;
+    height: 81%;
+}
+.selected-blog{
+    background-color: white;
+    display:flex;
+    flex-direction: column;
+    width: 70%;
+    height: 13%;
+    border-radius: 15px;
+    margin-top: 120px;
+    margin-left: 15%;
+    border-bottom: solid 5px;
+    border-right: solid 5px;
+    border-color: #fb9a7d;
+    box-shadow: #fb9a7d;
+}
+.selected-blog > .blog-header{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: solid 2px;
+    border-color: #974063;
+}
+.selected-blog > .blog-header > h1{
+    margin-left: 20px;
+    font-family: 'Secular One', sans-serif;
+    color: #974063;
+}
+.selected-blog > .blog-header > h1 > p{
+    margin-right: 20px;
+    font-size: medium;
+    font-family: 'Secular One', sans-serif;
+    color: #974063;
+}
+.selected-blog > p{
+    margin-left: 20px;
+    margin-right: 10px;
+    font-size: 18px;
+    font-family: 'Secular One', sans-serif;
+    color: #974063;
+}
+.create-form{
+    background-color: #F54768;
+    display:flex;
+    width: 100%;
+    /* height: 400px; */
+    margin-top: 9%;
+    align-items: center;
+    justify-content: center;
+}
+form{
+    display: flex;
+    background-color: #FF9677;
+    color: #41436A;
+    width: 50%;
+    padding: 15px;
+    border-radius: 10px;
+    border-color: white;
+    flex-direction: column;
+}
+form > label{
+    float: left;
+    font-family: 'Secular One', sans-serif;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+form > input{
+    font-size: 17px;
+    padding: 10px;
+    border: none;
+    background: #f5f1f1;
+    border-radius: 7px;
+    outline: none;
+    margin-bottom: 10px;
+}
+form > textarea{
+    padding-bottom: 100px;
+    height: 200px;
+    font-size: 17px;
+    border: none;
+    background: #f5f1f1;
+    border-radius: 7px;
+    outline: none;
+    margin-bottom: 10px;
+}
+form > button{
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    width: 80px;
+    height: 40px;
+    color: #fb9a7d;
+    background-color: #41436A;
+    font-size:15px;
+    margin-left: 40%;
+    margin-top: 8px;
+    font-family: 'Secular One', sans-serif;
+}
+form > button:hover{
+    color:#f5f1f1;
+    background-color:#974063;
+}
+.delete{
+    width: 0%;
+    height: 0%;
+    background: transparent;
+    border: none;
+    margin-right: 40px;
+}
+.delete>a>img{
+    height: 35px;
+    border-radius: 30px;
+}
+.delete > a{
+    text-decoration: none;
+}
+.delete > a > span{
+    font-family: 'Secular One', sans-serif;
+    color: #7d33bf;
+    text-decoration: none;
+}
+.buttons{
+    width: 11%;
+    margin-right: 5%;
+}
